@@ -27,20 +27,35 @@ export default function App() {
           </form>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-7">
             <div className="row">
               <h1>Paris</h1>
             </div>
             <div className="row">
               <ul className="local-info">
-                <li>Thursday, 17:50, scattered clouds</li>
-                <li>Humidity: 60%, Wind: 15km/h</li>
+                <div className="row">
+                  <div className="col-6">
+                    <li>Thursday, 17:50</li>
+                  </div>
+                  <div className="col-6">
+                    <li> scattered clouds</li>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-6">
+                    <li>Humidity: 60%</li>
+                  </div>
+                  <div className="col-6">
+                    <li>Wind: 15km/h</li>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-5 current">
             <img src="./sunny.png" alt="weather icon" />
-            <span>21°C</span>
+            <span>21</span>
+            <span className="celsius">°C</span>
           </div>
         </div>
       </div>

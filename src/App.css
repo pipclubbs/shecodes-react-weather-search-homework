@@ -1,8 +1,16 @@
+:root {
+  --main-colour: #302a3f;
+}
+
 body {
   margin: 100px 0;
   background-color: #f9f7fe;
 }
 
+h1 {
+  color: var(--main-colour);
+  padding-top: 15px;
+}
 .container {
   padding: 10px, 50px;
   background-color: #ffffff;
@@ -12,9 +20,23 @@ body {
 }
 .search-button {
   padding: 6px 0;
-  color: black;
+  background-color: #daaef2;
+  border-style: none;
 }
 
 .local-info {
   list-style-type: none;
+  color: var(--main-colour);
+  line-height: 1.5;
+}
+
+.current {
+  font-size: 70px;
+  color: var(--main-colour);
+  padding-top: 20px;
+}
+
+.celsius {
+  font-size: 20px;
+  vertical-align: center;
 }
