@@ -1,4 +1,5 @@
 import React from "react";
+import Date from "./Date";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,7 +12,9 @@ export default function WeatherInfo(props) {
           <div className="row">
             <ul className="local-info">
               <div className="row">
-                <li>Thursday, 17:50</li>
+                <li>
+                  <Date date={props.data.date} />
+                </li>
                 <li className="text-capitalize">{props.data.description}</li>
                 <li>Humidity: {props.data.humidity}%</li>
                 <li>Wind: {props.data.wind}km/h</li>
