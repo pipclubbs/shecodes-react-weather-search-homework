@@ -9,18 +9,18 @@ export default function App() {
         <div className="row">
           <form>
             <div className="row">
-              <div className="col-10 w-50">
+              <div className="col-10 w-60 p-0">
                 <input
                   className="form-control search-input"
                   input="text"
                   placeholder="Enter a city..."
                 ></input>
               </div>
-              <div className="col-2 p-0 ">
+              <div className="col-2 p-0">
                 <input
-                  className="btn btn-warning search-button"
-                  input="submit"
-                  placeholder="Search"
+                  className="btn search-button"
+                  type="button"
+                  value="Search"
                 ></input>
               </div>
             </div>
@@ -34,20 +34,10 @@ export default function App() {
             <div className="row">
               <ul className="local-info">
                 <div className="row">
-                  <div className="col-6">
-                    <li>Thursday, 17:50</li>
-                  </div>
-                  <div className="col-6">
-                    <li> scattered clouds</li>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-6">
-                    <li>Humidity: 60%</li>
-                  </div>
-                  <div className="col-6">
-                    <li>Wind: 15km/h</li>
-                  </div>
+                  <li>Thursday, 17:50</li>
+                  <li className="text-capitalize"> scattered clouds</li>
+                  <li>Humidity: 60%</li>
+                  <li>Wind: 15km/h</li>
                 </div>
               </ul>
             </div>

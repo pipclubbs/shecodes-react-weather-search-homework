@@ -19,9 +19,15 @@ h1 {
   padding: 40px;
 }
 .search-button {
-  padding: 6px 0;
-  background-color: #daaef2;
+  background-color: #003638;
+  opacity: 80%;
+  color: white;
   border-style: none;
+  padding: 7px 15px;
+}
+
+.search-button:hover {
+  background-color: #055052;
 }
 
 .local-info {
