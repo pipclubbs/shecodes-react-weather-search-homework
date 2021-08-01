@@ -20,7 +20,7 @@ h1 {
   width: 500px;
 }
 .search-button {
-  background-color: #003638;
+  background-color: #003638 !important;
   opacity: 80%;
   color: white;
   border-style: none;
