@@ -21,7 +21,7 @@ h1 {
 }
 .search-button {
   background-color: #003638 !important;
-  opacity: 80%;
+  opacity: 0.8;
   color: white;
   border-style: none;
   padding: 7px 15px;
