@@ -27,14 +27,6 @@ h1 {
   padding: 7px 15px;
 }
 
-.search-button:hover {
-  background-color: #94a3a3;
-}
-
-.search-button:after {
-  background-color: #003638;
-}
-
 .local-info {
   list-style-type: none;
   color: var(--main-colour);
