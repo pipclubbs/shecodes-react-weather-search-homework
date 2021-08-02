@@ -1,12 +1,13 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import Date from "./Date";
+import ConvertFahrenheit from "./ConvertFahrenheit";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-7">
+        <div className="col-6">
           <div className="row">
             <h1>{props.data.city}</h1>
           </div>
@@ -23,7 +24,7 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
         </div>
-        <div className="col-5 icon-temp">
+        <div className="col-6 icon-temp">
           <div className="row">
             <div className="col-5">
               <WeatherIcon
@@ -31,11 +32,8 @@ export default function WeatherInfo(props) {
                 alt={props.data.description}
               />
             </div>
-            <div className="col-7">
-              <span className="current">
-                {Math.round(props.data.temperature)}
-              </span>
-              <span className="celsius">°C</span>
+            <div className="col-7 p-0">
+              <ConvertFahrenheit celsius={props.data.temperature} />
             </div>
           </div>
         </div>

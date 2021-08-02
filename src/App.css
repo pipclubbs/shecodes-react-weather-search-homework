@@ -51,3 +51,7 @@ canvas {
 .icon-temp {
   padding: 50px 20px 0 0;
 }
+
+.ConvertFahrenheit a {
+  text-decoration: none;
+}
