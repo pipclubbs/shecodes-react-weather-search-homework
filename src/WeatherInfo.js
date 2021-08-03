@@ -7,10 +7,10 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-6">
-          <div className="row">
-            <h1>{props.data.city}</h1>
-          </div>
+        <h1>{props.data.city}</h1>
+      </div>
+      <div className="row">
+        <div className="col-5">
           <div className="row">
             <ul className="local-info">
               <div className="row">
@@ -24,7 +24,7 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
         </div>
-        <div className="col-6 icon-temp">
+        <div className="col-7 icon-temp p-0">
           <div className="row">
             <div className="col-5">
               <WeatherIcon
