@@ -24,11 +24,12 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
         </div>
-        <div className="col-7 icon-temp p-0">
+        <div className="col-7 p-0">
           <div className="row">
-            <div className="col-5">
+            <div className="col-5 align-self-center ps-5">
               <WeatherIcon
                 data={props.data.icon}
+                size={64}
                 alt={props.data.description}
               />
             </div>

@@ -44,14 +44,12 @@ h1 {
   vertical-align: center;
 }
 
-canvas {
-  padding: 25px 0 0 15px;
-}
-
-.icon-temp {
-  padding: 5px 20px 0 0;
-}
-
 .ConvertFahrenheit a {
   text-decoration: none;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
