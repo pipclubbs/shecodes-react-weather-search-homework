@@ -1,6 +1,7 @@
 .Forecast-day,
 .Forecast-temps {
   text-align: center;
+  color: var(--main-colour);
 }
 
 .Forecast-temps strong {
