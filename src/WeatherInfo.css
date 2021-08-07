@@ -1,0 +1,5 @@
+.WeatherInfo-local-info {
+  list-style-type: none;
+  color: var(--main-colour);
+  line-height: 1.5;
+}

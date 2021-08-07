@@ -1,7 +1,8 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import Date from "./Date";
-import ConvertFahrenheit from "./ConvertFahrenheit";
+import CelsiusTemperature from "./CelsiusTemperature";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -12,7 +13,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-5">
           <div className="row">
-            <ul className="local-info">
+            <ul className="WeatherInfo-local-info">
               <div className="row">
                 <li>
                   <Date date={props.data.date} />
@@ -34,7 +35,7 @@ export default function WeatherInfo(props) {
               />
             </div>
             <div className="col-7 p-0">
-              <ConvertFahrenheit celsius={props.data.temperature} />
+              <CelsiusTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </div>

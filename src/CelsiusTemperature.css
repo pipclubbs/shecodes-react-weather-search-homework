@@ -1,0 +1,10 @@
+.CelsiusTemperature-current {
+  font-size: 70px;
+  color: var(--main-colour);
+  padding-top: 20px;
+}
+
+.CelsiusTemperature-celsius {
+  font-size: 20px;
+  vertical-align: center;
+}

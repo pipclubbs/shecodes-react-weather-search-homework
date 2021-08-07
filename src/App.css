@@ -11,6 +11,13 @@ h1 {
   color: var(--main-colour);
   padding-top: 15px;
 }
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .container {
   padding: 10px, 50px;
   background-color: #ffffff;
@@ -19,37 +26,11 @@ h1 {
   padding: 40px;
   width: 500px;
 }
+
 .search-button {
   background-color: #003638 !important;
   opacity: 0.8;
   color: white;
   border-style: none;
   padding: 7px 15px;
-}
-
-.local-info {
-  list-style-type: none;
-  color: var(--main-colour);
-  line-height: 1.5;
-}
-
-.current {
-  font-size: 70px;
-  color: var(--main-colour);
-  padding-top: 20px;
-}
-
-.celsius {
-  font-size: 20px;
-  vertical-align: center;
-}
-
-.ConvertFahrenheit a {
-  text-decoration: none;
-}
-
-canvas {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
 }
