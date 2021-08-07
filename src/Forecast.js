@@ -19,22 +19,24 @@ export default function Forecast(props) {
       <div className="Forecast">
         <div className="row justify-content-center">
           {weatherData.map(function (dailyForecast, index) {
-            return (
-              <div className="col" key={index}>
-                <div className="Forecast-day">
-                  <ForecastDay day={new Date(dailyForecast.dt * 1000)} />
+            if (index > 0 && index < 6) {
+              return (
+                <div className="col" key={index}>
+                  <div className="Forecast-day">
+                    <ForecastDay day={new Date(dailyForecast.dt * 1000)} />
+                  </div>
+                  <WeatherIcon
+                    data={dailyForecast.weather[0].icon}
+                    size={35}
+                    alt={props.data.description}
+                  />
+                  <div className="Forecast-temps">
+                    <strong>{Math.round(dailyForecast.temp.max)}°</strong>
+                    {Math.round(dailyForecast.temp.min)}°
+                  </div>
                 </div>
-                <WeatherIcon
-                  data={dailyForecast.weather[0].icon}
-                  size={35}
-                  alt={props.data.description}
-                />
-                <div className="Forecast-temps">
-                  <strong>{Math.round(dailyForecast.temp.max)}°</strong>
-                  {Math.round(dailyForecast.temp.min)}°
-                </div>
-              </div>
-            );
+              );
+            }
           })}
         </div>
       </div>
