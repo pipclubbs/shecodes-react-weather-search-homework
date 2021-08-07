@@ -1,7 +1,8 @@
-.Forecast-day {
+.Forecast-day,
+.Forecast-temps {
   text-align: center;
 }
 
-.Forecast-temps {
-  text-align: center;
+.Forecast-temps strong {
+  padding-right: 5px;
 }
